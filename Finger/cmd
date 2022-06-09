@@ -1,0 +1,5 @@
+python3 s.py 
+python3 cl.py 
+--------------
+python3 s.py 
+python3 cl12.py --login sofien --host 127.0.0.1

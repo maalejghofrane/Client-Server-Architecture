@@ -1,0 +1,25 @@
+********DWLD*******
+python serverftp.py
+python clientftp.py
+conn
+dwld serverftp.py
+********LIST*******
+python serverftp.py
+python clientftp.py
+conn
+list
+*********UPLD******
+python serverftp.py
+python clientftp.py
+conn
+upld test2.txt
+*******QUIT********
+python serverftp.py
+python clientftp.py
+conn
+quit
+*******CHDR********
+python serverftp.py
+python clientftp.py
+conn
+chdr /home/sofien/Bureau/vf/ftp/cs

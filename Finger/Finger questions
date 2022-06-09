@@ -1,0 +1,26 @@
+2-Finger
+
+1. Quels sont le protocole et le numéro de port associés à finger ?
+protocole finger; port = 79 
+2. Quels sont les services disponibles sur vos machines ? 
+systemctl list-unit-files --type=service
+cd /etc/init.d/ 
+ls 
+3. Comment les utilise-t-on pour lancer, arrêter ou redémarrer un service ?
+-systemctl enable [nom du service].service	Activer un service
+-systemctl start [nom du service].service	Démarrer un service
+-systemctl restart [nom du service].service	Redémarrer un service
+-sudo service apache2 stop
+-sudo service apache2 start
+-udo service apache2 restart
+4. Regardez les fichiers contenus dans ce répertoire. Lesquels contiennent le pid des services ?
+Comment est enregistré le pid dans ces fichiers ?
+
+lien : https://wiki.debian-fr.xyz/Consulter_les_logs_:_quoi,_o%C3%B9_et_comment_chercher_%3F
+*Pour voir "en direct" des logs (tail -f)
+tail -f /var/log/auth.log
+
+*Avoir les 20 dernières lignes d'un fichier log
+# tail -n 20 /var/log/messages
+
+3-Implémentation du protocole Finger 
